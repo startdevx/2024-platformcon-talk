@@ -14,5 +14,5 @@ I will explain how the creation of an in-house CLI within our organization helpe
 * Gaining insights about future enhancements we would like to implement
 
 ## Useful links
-* YouTube recording: *coming soon*
 * Start DevX website: https://startdevx.com
+* YouTube recording: *coming soon*

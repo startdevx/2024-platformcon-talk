@@ -1,1 +1,0 @@
-Write-Host "You have executed the update subcommand"
