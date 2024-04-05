@@ -1,3 +1,4 @@
-Write-Host "You have executed the update subcommand with the following arguments: " $args
+Write-Host "You have executed the update subcommand with the following arguments."
 
-Write-Host $env:PATH
+git fetch --all --tags
+Write-Host "Hello"
