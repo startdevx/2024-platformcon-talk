@@ -15,6 +15,6 @@ else {
     $confirmation = Read-Host "A new version $newTagVersion is available, do you want to update now [Y/n]?"
     if ($confirmation -eq "y") {
         git -C "$PSScriptRoot\..\.." pull --quiet
-        Write-Host "Update to $newTagVersion version was successfull"
+        Write-Host "Update to $newTagVersion version was successfull!"
     }
 }
