@@ -13,5 +13,5 @@ if ($currentTagVersion -eq $newTagVersion) {
 }
 else {
     git -C "$PSScriptRoot\..\.." pull
-    Write-Host "Update is successfull"
+    Write-Host "Update is successfulll"
 }
