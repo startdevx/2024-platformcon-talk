@@ -1,4 +1,2 @@
-Write-Host "You have executed the update subcommand with the following arguments."
-
-git fetch --all --tags
-Write-Host "Hello"
+Write-Host "Updating CLI"
+git -C "$PSScriptRoot\..\.." fetch --all --tags
