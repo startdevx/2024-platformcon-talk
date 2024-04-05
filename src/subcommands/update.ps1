@@ -5,8 +5,8 @@ $currentTagVersion = git -C "$PSScriptRoot\..\.." describe --tags $currentTagRev
 
 git -C "$PSScriptRoot\..\.." fetch --all --tags --quiet
 
-$newTagRevision = git -C "$PSScriptRoot\..\.." rev-list --tags --max-count=1 --quiet
-$newTagVersion = git -C "$PSScriptRoot\..\.." describe --tags $newTagRevision --quiet
+$newTagRevision = git -C "$PSScriptRoot\..\.." rev-list --tags --max-count=1
+$newTagVersion = git -C "$PSScriptRoot\..\.." describe --tags $newTagRevision
 
 if ($currentTagVersion -eq $newTagVersion) {
     Write-Host "There is no update available"
