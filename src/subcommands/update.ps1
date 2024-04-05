@@ -1,4 +1,4 @@
-Write-Host "Updating CLI"
+Write-Host "Checking if new version is available" -ForegroundColor White
 
 git -C "$PSScriptRoot\..\.." fetch --all --tags --quiet
 
@@ -9,12 +9,12 @@ $currentTagVersion = git -C "$PSScriptRoot\..\.." describe --tags $currentTagRev
 $newTagVersion = git -C "$PSScriptRoot\..\.." describe --tags $newTagRevision
 
 if ($currentTagVersion -eq $newTagVersion) {
-    Write-Host "There is no update available"
+    Write-Host "No update is available"
 }
 else {
     $confirmation = Read-Host "A new version $newTagVersion is available, do you want to update now [Y/n]?"
     if ($confirmation -eq "y") {
         git -C "$PSScriptRoot\..\.." pull --quiet
-        Write-Host "Update to $newTagVersion version was successfull!"
+        Write-Host "Version $newTagVersion was installed successfully!"
     }
 }
