@@ -12,6 +12,7 @@ $subCommand, $options = $arguments
 
 switch -CaseSensitive ($subCommand) {
     "update" { ."$PSScriptRoot\..\subcommands\update.ps1" $options }
+    "docs" { ."$PSScriptRoot\..\subcommands\docs.ps1" }
     default {
         Write-CommandNotFound
     }
