@@ -9,7 +9,7 @@ $currentTagVersion = git -C "$PSScriptRoot\..\.." describe --tags $currentTagRev
 $newTagVersion = git -C "$PSScriptRoot\..\.." describe --tags $newTagRevision
 
 if ($currentTagVersion -eq $newTagVersion) {
-    Write-Host "No update is available"
+    Write-Host "No update is available!"
 }
 else {
     $confirmation = Read-Host "A new version $newTagVersion is available, do you want to update now [Y/n]?"
