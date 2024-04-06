@@ -26,8 +26,6 @@ class: invert
 
 ---
 
-![bg left:30% 70%](https://cache.sessionize.com/image/4282-400o400o2-nTPykVCbcYcGMzfdwTrMsW.jpg)
-
 ### Source code
 ![w:30px](https://cdn3.iconfinder.com/data/icons/inficons/512/github.png) [/startdevx/2024-platformcon-talk](https://github.com/startdevx/2024-platformcon-talk)
 
