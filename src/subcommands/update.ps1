@@ -22,7 +22,8 @@ function Send-ReleaseNote($releaseVersion) {
 
 Write-Host "Checking if new version is available" -ForegroundColor White
 
-git -C "$PSScriptRoot\..\.." fetch --prune --prune-tags --all --tags --quiet
+git -C "$PSScriptRoot\..\.." fetch --prune --prune-tags --quiet
+git -C "$PSScriptRoot\..\.." fetch --all --tags --quiet
 
 $currentTagRevision = git -C "$PSScriptRoot\..\.." rev-parse --verify HEAD
 $newTagRevision = git -C "$PSScriptRoot\..\.." rev-list --tags --max-count=1
