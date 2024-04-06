@@ -1,7 +1,7 @@
 NEW RELEASE NOTE
 
 NEW FEATURE
-Email sending!
+Email sending!!
 
 BUG FIX
 Correct error in subcommand help
